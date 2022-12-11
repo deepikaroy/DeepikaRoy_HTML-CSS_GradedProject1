@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form</title>
+    <link rel="stylesheet" href="StyleSheets/labTestUserForm.css">
+</head>
+
+<body>
+    <section>
+        <aside>
+            <img src="Images/Lab-Test/lab-test.jpg" alt="">
+        </aside>
+        <form>
+            <div class="main">
+                <h2>Fill the following details to Book Lab Test</h2>
+                <h3>1. Your Contact Details</h3>
+                <div class="contactDetails">
+                    <input class="input-line-only" type="text" placeholder="Full Name">
+                    <input class="input-line-only" type="number" placeholder="Patient Id if exists">
+                    <input class="input-line-only" type="number" placeholder="Contact Number">
+                    <input class="input-line-only" type="email" placeholder="Email Id">
+                </div>
+                <h3>2. Address</h3>
+                <div class="contactDetails">
+                    <input class="input-line-only" type="number" placeholder="House Number">
+                    <input class="input-line-only" type="text" placeholder="Street">
+                    <input class="input-line-only" type="text" placeholder="Area">
+                </div>
+                <div id="district-dropdown">
+                    <label for="district">District:</label><br>
+                    <select name="district">
+                    <option value="Choose">Choose</option>
+                    <option value="Udupi">Udupi</option>
+                    <option value="Tumakuru">Tumakuru</option>
+                    <option value="Uttara Kannada">Uttara Kannada</option>
+                    <option value="Shivamogga">Shivamogga</option>
+                    <option value="Ramanagara">Ramanagara</option>
+                    <option value="Mysuru">Mysuru</option>
+                    <option value="Raichur">Raichur</option>
+                    <option value="Koppal">Koppal</option>
+                    <option value="Dhule">Dhule</option>
+                    <option value="Kodagu">Kodagu</option>
+                    <option value="Gondia">Gondia</option>
+                    <option value="Chikkamagaluru">Chikkamagaluru</option>
+                    <option value="Jalgaon">Jalgaon</option>
+                    <option value="Davanagere">Davanagere</option>
+                    <option value="Mandya">Mandya</option>
+                    <option value="Ballari">Ballari</option>                   
+                    <option value="Nagpur">Nagpur</option>
+                    <option value="Yadgir">Yadgir</option>
+                    <option value="Raigad">Raigad</option>
+                    <option value="Ratnagiri">Ratnagiri</option>
+                </select>
+                </div>
+                <h3>3. Test Type (Check atleast one box without fail)</h3>
+                <div id="testOptions">
+                    <input type="checkbox" name="tests" value="CBC">CBC<br>
+                    <input type="checkbox" name="tests" value="Complete Urine">Complete Urine<br>
+                    <input type="checkbox" name="tests" value="Lipid Profile">Lipid Profile<br>
+                    <input type="checkbox" name="tests" value="Thyroid Stimulating Hormone(TSH)">Thyroid Stimulating Hormone(TSH)<br>
+                    <input type="checkbox" name="tests" value="Glucose Test">Glucose Test<br>
+                </div>
+                <div>
+                    <h3>4.Do you want a hard copy of the report also?</h3>
+                    <input type="radio" name="report" value="Yes">Yes<br>
+                    <input type="radio" name="report" value="No">No<br>
+                </div>
+                <div>
+                    <h3>5. Select Your Comfortable Date and Time</h3>
+                    <input class="datetime" type="date" name="date" placeholder="Date">
+                    <input class="datetime" type="time" id="time" name="time">
+                </div>
+            </div>
+            <div class="submission">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </section>
+
+</body>
+
+</html>
